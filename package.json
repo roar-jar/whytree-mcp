@@ -31,7 +31,7 @@
     "node": ">=20.0.0"
   },
   "bin": {
-    "whytree-mcp": "./bin/whytree-mcp.js"
+    "whytree-mcp": "bin/whytree-mcp.js"
   },
   "files": [
     "bin/",
