@@ -37,6 +37,7 @@
     "bin/",
     "dist/",
     "skills/",
+    "SKILL.md",
     "LICENSE",
     "README.md"
   ],
