@@ -93,17 +93,19 @@ npm pack --dry-run
 
 1. Create the public GitHub repository: `roar-jar/whytree-mcp`.
 2. Push the package contents.
-3. Add `NPM_TOKEN` to GitHub Actions secrets.
+3. Enable npm trusted publishing for this repository in npm package settings.
 4. Create a GitHub Release tag like `v0.1.0`.
-5. Let `.github/workflows/publish.yml` publish the package to npm.
+5. Let `.github/workflows/publish.yml` publish the package to npm via OIDC, without a long-lived token.
 
-## Suggested GitHub setup
+## npm trusted publishing setup
 
-```bash
-gh repo create roar-jar/whytree-mcp --public --description "MCP server that turns vague requests into purpose-driven structured briefs"
-```
+In npm, open the `whytree-mcp` package settings and add a trusted publisher for this GitHub repository/workflow:
 
-After creating the repo, you can push this package contents into it as the initial codebase.
+- repository: `roar-jar/whytree-mcp`
+- workflow file: `.github/workflows/publish.yml`
+- environment: none required
+
+After that, GitHub Releases can publish to npm without storing an `NPM_TOKEN` secret in GitHub.
 
 ## License
 

@@ -19,8 +19,5 @@ jobs:
           node-version: ${{ matrix.node-version }}
           registry-url: https://registry.npmjs.org
           cache: npm
-          cache-dependency-path: packages/prompt-structurer-mcp/package-lock.json
       - run: npm ci
-        working-directory: packages/prompt-structurer-mcp
       - run: npm test
-        working-directory: packages/prompt-structurer-mcp
