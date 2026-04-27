@@ -1,16 +1,16 @@
 {
-  "name": "prompt-structurer-mcp",
+  "name": "whytree-mcp",
   "version": "0.1.0",
   "description": "MCP server that turns vague requests into purpose-driven structured briefs",
   "license": "MIT",
   "author": "Aram Jung",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/roar-jar/prompt-structurer-mcp.git"
+    "url": "git+https://github.com/roar-jar/whytree-mcp.git"
   },
-  "homepage": "https://github.com/roar-jar/prompt-structurer-mcp#readme",
+  "homepage": "https://github.com/roar-jar/whytree-mcp#readme",
   "bugs": {
-    "url": "https://github.com/roar-jar/prompt-structurer-mcp/issues"
+    "url": "https://github.com/roar-jar/whytree-mcp/issues"
   },
   "type": "module",
   "private": false,
@@ -31,7 +31,7 @@
     "node": ">=20.0.0"
   },
   "bin": {
-    "prompt-structurer-mcp": "./bin/prompt-structurer-mcp.js"
+    "whytree-mcp": "./bin/whytree-mcp.js"
   },
   "files": [
     "bin/",

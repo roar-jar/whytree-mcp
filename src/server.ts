@@ -15,7 +15,7 @@ import {
 
 export function createServer() {
   const server = new McpServer(
-    { name: 'prompt-structurer-mcp', version: '0.1.0' },
+    { name: 'whytree', version: '0.1.0' },
     {
       instructions:
         'Turn vague requests into purpose-driven briefs with task, purpose, why-now, constraints, success signals, and next-step prompts.',
@@ -147,5 +147,5 @@ export async function startServer() {
   const server = createServer();
   const transport = new StdioServerTransport();
   await server.connect(transport);
-  console.error('prompt-structurer-mcp running on stdio');
+  console.error('whytree running on stdio');
 }

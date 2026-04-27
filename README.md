@@ -1,6 +1,6 @@
-# prompt-structurer-mcp
+# Why Tree
 
-`prompt-structurer-mcp` is an MCP server that turns vague requests into purpose-driven structured briefs.
+`whytree-mcp` is the MCP package for Why Tree, a server that turns vague requests into purpose-driven structured briefs.
 
 Instead of stopping at "do X", it helps turn fuzzy intent into a reusable execution prompt with:
 
@@ -43,7 +43,7 @@ Classifies the request by domain and request type so you can pick the right fram
 ### Run with npx
 
 ```bash
-npx -y prompt-structurer-mcp
+npx -y whytree-mcp
 ```
 
 ### Claude Code / Claude Desktop MCP config
@@ -51,9 +51,9 @@ npx -y prompt-structurer-mcp
 ```json
 {
   "mcpServers": {
-    "prompt-structurer": {
+    "whytree": {
       "command": "npx",
-      "args": ["-y", "prompt-structurer-mcp"]
+      "args": ["-y", "whytree-mcp"]
     }
   }
 }
@@ -79,7 +79,7 @@ Success signals: 연구 질문이 한 문장으로 정리된다 ...
 
 ## Optional Claude Code skill
 
-This package also includes a companion skill at `skills/structured-brief/SKILL.md` for people who want a slash-command style workflow inside Claude Code.
+This package also includes a companion skill at `skills/structured-brief/SKILL.md` with the slash-command name `/whytree` for people who want a branded workflow inside Claude Code.
 
 ## Local development
 
@@ -91,7 +91,7 @@ npm pack --dry-run
 
 ## GitHub and npm release checklist
 
-1. Create the public GitHub repository: `roar-jar/prompt-structurer-mcp`.
+1. Create the public GitHub repository: `roar-jar/whytree-mcp`.
 2. Push the package contents.
 3. Add `NPM_TOKEN` to GitHub Actions secrets.
 4. Create a GitHub Release tag like `v0.1.0`.
@@ -100,7 +100,7 @@ npm pack --dry-run
 ## Suggested GitHub setup
 
 ```bash
-gh repo create roar-jar/prompt-structurer-mcp --public --description "MCP server that turns vague requests into purpose-driven structured briefs"
+gh repo create roar-jar/whytree-mcp --public --description "MCP server that turns vague requests into purpose-driven structured briefs"
 ```
 
 After creating the repo, you can push this package contents into it as the initial codebase.

@@ -1,10 +1,10 @@
 ---
-name: structured-brief
-description: Turn vague requests into purpose-driven briefs with task, purpose, why-now, constraints, and success signals.
+name: whytree
+description: Why Tree — turn vague requests into purpose-driven briefs with task, purpose, why-now, constraints, and success signals.
 user_invocable: true
 ---
 
-# structured-brief
+# Why Tree
 
 Use this when the user's request is still fuzzy and needs to be organized before execution.
 
