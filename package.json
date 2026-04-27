@@ -1,0 +1,59 @@
+{
+  "name": "prompt-structurer-mcp",
+  "version": "0.1.0",
+  "description": "MCP server that turns vague requests into purpose-driven structured briefs",
+  "license": "MIT",
+  "author": "Aram Jung",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roar-jar/prompt-structurer-mcp.git"
+  },
+  "homepage": "https://github.com/roar-jar/prompt-structurer-mcp#readme",
+  "bugs": {
+    "url": "https://github.com/roar-jar/prompt-structurer-mcp/issues"
+  },
+  "type": "module",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "prompt",
+    "brief",
+    "planning",
+    "design-thinking",
+    "logic-tree",
+    "claude"
+  ],
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "bin": {
+    "prompt-structurer-mcp": "./bin/prompt-structurer-mcp.js"
+  },
+  "files": [
+    "bin/",
+    "dist/",
+    "skills/",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && tsx --test tests/*.test.ts",
+    "prepare": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server": "^2.0.0-alpha.2",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "@cfworker/json-schema": "^4.1.1",
+    "@modelcontextprotocol/client": "^2.0.0-alpha.2",
+    "@types/node": "^24.6.0",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  }
+}
